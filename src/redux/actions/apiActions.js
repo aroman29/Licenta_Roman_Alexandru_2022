@@ -1,6 +1,5 @@
 import axios from 'axios';
 import { HTTP_STATUS_CODES } from '../../utils/constants';
-// import logoutAction from './logoutAction';
 
 export const getUrl = (apiUrl, identifier) => {
   let newUrl = apiUrl;

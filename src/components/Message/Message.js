@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUserAlt } from '@fortawesome/free-solid-svg-icons';
 import './style.scss';
 
-const RbMessage = ({
+const AfMessage = ({
   message, user, hasIcon, showTime, sendTime, dataContent,
 }) => {
   const key = useRef(0);
@@ -35,7 +35,7 @@ const RbMessage = ({
   );
 };
 
-RbMessage.propTypes = {
+AfMessage.propTypes = {
   message: PropTypes.string.isRequired,
   user: PropTypes.bool.isRequired,
   hasIcon: PropTypes.bool.isRequired,
@@ -44,4 +44,4 @@ RbMessage.propTypes = {
   dataContent: PropTypes.string.isRequired,
 };
 
-export default RbMessage;
+export default AfMessage;

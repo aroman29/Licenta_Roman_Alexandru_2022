@@ -6,7 +6,7 @@ const initialState = {
   problems: [],
   carApiError: '',
 };
-//CAR_ACTIONS.GET_CAR_PROBLEMS_SUCCESS
+
 export const carReducer = (state = initialState, action) => {
   switch (action.type) {
     case CAR_ACTIONS.GET_CARS_SUCCESS:

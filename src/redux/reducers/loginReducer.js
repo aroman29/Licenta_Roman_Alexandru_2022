@@ -31,11 +31,6 @@ export const loginReducer = (state = initialState, action) => {
         ...state,
         loginError: '',
       };
-
-    // case REGISTER_ACTIONS.REGISTER_REQUEST:
-    //   return {
-    //     ...initialState,
-    //   };
     case LOGIN_ACTIONS.SET_TOKEN:
       return {
         ...state,
@@ -45,11 +40,6 @@ export const loginReducer = (state = initialState, action) => {
       return {
         ...state,
       };
-    // case UPDATE_USER_ACTIONS.UPDATE_USER_SUCCESS:
-    //   return {
-    //     ...state,
-    //     loggedIn: true,
-    //   };
     case LOGIN_ACTIONS.INVALID_TOKEN:
       return {
         ...state,

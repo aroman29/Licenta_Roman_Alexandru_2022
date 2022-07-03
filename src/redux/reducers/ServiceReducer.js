@@ -5,7 +5,6 @@ const initialState = {
   selectedService: null,
   addServiceError: '',
   deleteServiceError: '',
-  filterStatus: -1,
 };
 
 export const serviceReducer = (state = initialState, action) => {
@@ -30,22 +29,6 @@ export const serviceReducer = (state = initialState, action) => {
         ...state,
         addServiceError: action.error,
       };
-    // case SERVICE_ACTIONS.EDIT_LOCATION_SUCCESS:
-    //   return {
-    //     ...state,
-    //     locations: [...state.locations.map((location) => {
-    //       if (location.id === action.payload.id) {
-    //         return action.payload;
-    //       }
-    //       return location;
-    //     })],
-    //     addLocationError: false,
-    //   };
-    // case LOCATION_ACTIONS.EDIT_LOCATION_FAILURE:
-    //   return {
-    //     ...state,
-    //     addLocationError: action.error,
-    //   };
     case SERVICE_ACTIONS.SET_SELECTED_SERVICE:
       return {
         ...state,
@@ -62,11 +45,6 @@ export const serviceReducer = (state = initialState, action) => {
         ...state,
         deleteServiceError: action.error,
       };
-    // case LOCATION_ACTIONS.CHANGE_STATUS_FILTER:
-    //   return {
-    //     ...state,
-    //     filterStatus: action.payload,
-    //   };
     default:
       return state;
   }

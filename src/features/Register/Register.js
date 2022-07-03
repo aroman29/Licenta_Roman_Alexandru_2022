@@ -29,7 +29,6 @@ const Register = () => {
   const { serviceId } = useParams();
 
   const currentUserInfo = useSelector((state) => state.user.currentUser);
-  // const isAccountUpdate = (currentUserInfo !== null);
   const isLoggedIn = useSelector((state) => state.login.loggedIn);
   const registerError = useSelector((state) => state.register?.registerError);
   const [userType, setUserType] = useState(USER_TYPE.client.toString());
@@ -72,9 +71,6 @@ const Register = () => {
   ];
 
   const cancelBtnClick = () => {
-    // if (isAccountUpdate) {
-    //   dispatch(resetUser());
-    // }
     history.goBack();
   };
 
@@ -149,18 +145,10 @@ const Register = () => {
       >
       <div className="authentication-page-container">
         <form className="register-container" onSubmit={handleSubmit(onSubmit)}>
-            {/* {isAccountUpdate && (
-              <div className="complete-account">
-                {translate('REGISTER.completeAccount')}
-              </div>
-            )} */}
             <div className="input-wrapper">
               <div className="row-elements">
                 <div className="child-element">
                   <RbInput
-                    // disabled={isAccountUpdate}
-                    // defaultValue={isAccountUpdate ? currentUserInfo.email : ''}
-                    // readOnly={isAccountUpdate}
                     placeholder={translate('LOGIN.userPlaceholder')}
                     label={translate('REGISTER.username')}
                     labelIcon={faEnvelope}
@@ -231,18 +219,7 @@ const Register = () => {
                 </div>
               </div>
 
-              {/* <div className="row-elements">
-                <div className="child-element">
-                  <RbInput
-                    placeholder={translate('REGISTER.phone')}
-                    label={translate('REGISTER.phone')}
-                    labelIcon={faMobileAlt}
-                    errorMessage={errors.phone && errors.phone.message}
-                    {...register('phone', phoneValidationRules)}
-                  />
-                </div>
 
-              </div> */}
               <div className="row-elements">
 
                 <div className="child-element">
@@ -252,7 +229,6 @@ const Register = () => {
                     </div>
                     <div className="btn-register">
                       <RbButton
-                        // text={isAccountUpdate ? translate('REGISTER.updateAccount') : translate('REGISTER.register')}
                         text={translate('REGISTER.register')}
                         type="submit"
                         buttonType={BUTTON_TYPES.primary}
@@ -272,18 +248,11 @@ const Register = () => {
           <AppLogo logoClass="login-logo" />
         </div>
         <form className="register-container margin-top" onSubmit={handleSubmit(onSubmit)}>
-            {/* {isAccountUpdate && (
-              <div className="complete-account">
-                {translate('REGISTER.completeAccount')}
-              </div>
-            )} */}
+
             <div className="input-wrapper">
               <div className="row-elements">
                 <div className="child-element">
                   <RbInput
-                    // disabled={isAccountUpdate}
-                    // defaultValue={isAccountUpdate ? currentUserInfo.email : ''}
-                    // readOnly={isAccountUpdate}
                     placeholder={translate('LOGIN.userPlaceholder')}
                     label={translate('REGISTER.username')}
                     labelIcon={faEnvelope}
@@ -354,18 +323,6 @@ const Register = () => {
                 </div>
               </div>
 
-              {/* <div className="row-elements">
-                <div className="child-element">
-                  <RbInput
-                    placeholder={translate('REGISTER.phone')}
-                    label={translate('REGISTER.phone')}
-                    labelIcon={faMobileAlt}
-                    errorMessage={errors.phone && errors.phone.message}
-                    {...register('phone', phoneValidationRules)}
-                  />
-                </div>
-
-              </div> */}
               <div className="row-elements">
 
                 <div className="child-element">
@@ -375,7 +332,6 @@ const Register = () => {
                     </div>
                     <div className="btn-register">
                       <RbButton
-                        // text={isAccountUpdate ? translate('REGISTER.updateAccount') : translate('REGISTER.register')}
                         text={translate('REGISTER.register')}
                         type="submit"
                         buttonType={BUTTON_TYPES.primary}

@@ -5,9 +5,7 @@ export const HTTP_STATUS_CODES = {
 export const EMAIL_FORMAT_REGEX = /^[a-z0-9_]+@[a-z]+.[a-z]{2,4}$/;
 export const PASSWORD_FORMAT_REGEX = '';
 export const PHONE_NUMBER_FORMAT_REGEX = /^[0-9]*$/;
-export const ID_CARD_FORMAT_REGEX = /^AX [0-9]{6}$/;
 export const DATE_FORMAT_REGEX = /^[0-9]{4}-[0-9]{2}-[0-9]{2}$/;
-export const NEW_TENANT_PASSWORD = '0123456789';
 
 export const APP_PAGE_URLS = {
   register: 'register',
@@ -17,16 +15,9 @@ export const APP_PAGE_URLS = {
   adminServices: 'admin/services',
   adminCars: 'admin/cars',
   bills: 'bills',
-  statistics: 'statistics',
-  account: 'my-account',
   addService: 'addService',
   service: 'service',
-  addBillSummary: 'addBillSummary',
   editService: 'editService',
-  addContract: 'addContract',
-  editContract: 'editContract',
-  addBillUtility: 'addBillUtility',
-  editUtilityBill: 'editBillUtility',
   messages: 'messages',
 };
 
@@ -34,13 +25,6 @@ export const USER_TYPE = {
   admin: 0,
   staff: 1,
   client: 2,
-};
-
-export const GRAPH_COLORS = {
-  1: '#2a4365',
-  2: '#815f9c',
-  3: '#1b662b',
-  4: '#e5b945',
 };
 
 export const API_URLS = {
@@ -91,12 +75,6 @@ export const MONTHS = {
   dec: 12,
 };
 
-// export const CAR_SUMMARY_STATUSSES = {
-//   waiting: 'WAITING',
-//   accepted: 'ACCEPTED',
-//   inProgress: 'IN PROGRESS',
-//   finished: ' FINISHED',
-// };
 
 export const CAR_SUMMARY_STATUSSES = {
   0: 'waiting',
@@ -142,7 +120,6 @@ export const PROBLEMS = {
 };
 
 export const MESSAGES = {
-  // RETRIEVE_INTERVAL: 3000,
   RETRIEVE_INTERVAL: 300000,
 };
 
@@ -152,10 +129,6 @@ export const API_REQUEST_METHODS = {
   PATCH: 'patch',
   PUT: 'put',
   DELETE: 'delete',
-};
-
-export const BILL_VALIDATION = {
-  summaryMinYear: 1970,
 };
 
 export const SERVER_RESPONSE = {
@@ -177,7 +150,3 @@ export const LOGIN_INPUT_TYPES = {
   text: 'text',
   password: 'password',
 };
-
-export const EMAIL_TEMPLATE_ID = 'template_7pkc1fg';
-export const GMAIL_SERVICE_ID = 'service_gt7nv0k';
-export const USER_ID = 'user_hemIZz5WtPahH0VFZFcdm';

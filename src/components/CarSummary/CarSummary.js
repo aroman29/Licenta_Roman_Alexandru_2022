@@ -4,13 +4,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { BUTTON_TYPES, CAR_SUMMARY_STATUSSES, STATUSSES, PROBLEMS, USER_TYPE } from '../../utils/constants';
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
-import { useHistory, useParams } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import { faComments } from '@fortawesome/free-regular-svg-icons';
 import carActions from '../../redux/actions/carActions';
 import AfButton from '../Button/Button';
 import AfModal from '../Modal/Modal';
 import {
-  faEdit, faTimes, faAngleDoubleUp, faAngleDoubleDown, faCheck, faCircleNotch, faExclamation
+  faAngleDoubleUp, faAngleDoubleDown, faExclamation
 } from '@fortawesome/free-solid-svg-icons';
 import ExtendedSummary from '../ExtendedSummary/ExtendedSummary';
 import Button from '@mui/material/Button';
@@ -22,7 +22,6 @@ import DialogActions from '@mui/material/DialogActions';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';

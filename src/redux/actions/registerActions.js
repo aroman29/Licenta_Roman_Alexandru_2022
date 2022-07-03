@@ -1,7 +1,6 @@
 import { REGISTER_ACTIONS } from '../../redux/actions/ActionTypes';
 import {
-  API_URLS, API_REQUEST_METHODS, NEW_TENANT_PASSWORD, USER_TYPE, GMAIL_SERVICE_ID,
-  USER_ID, EMAIL_TEMPLATE_ID, SERVER_RESPONSE,
+  API_URLS, API_REQUEST_METHODS, NEW_TENANT_PASSWORD, USER_TYPE, SERVER_RESPONSE,
 } from '../../utils/constants';
 import { apiRequest, getUrl, authenticationApiRequest } from './apiActions';
 

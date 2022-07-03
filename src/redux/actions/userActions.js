@@ -49,11 +49,6 @@ export const getAdminMainData = () => async (dispatch, getState) => {
       await dispatch(ServiceActions.setSelectedService(services ? getState().service.services[0] : ''));
     }
     
-    // const userRole = getState().user.currentUser?.role;
-
-    // if (USER_TYPE.landlord.toString() === userRole) {
-    //   await dispatch(ServiceActions.getServices());
-    // }
   }
 };
 
@@ -98,4 +93,3 @@ export const deleteUser = (id) => {
     });
 };
 
-// export default { getUser, resetUser };

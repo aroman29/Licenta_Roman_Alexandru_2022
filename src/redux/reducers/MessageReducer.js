@@ -5,7 +5,7 @@ const initialState = {
   partnerId: null,
   messagesApiError: null
 };
-//CAR_ACTIONS.GET_CAR_PROBLEMS_SUCCESS
+
 export const messageReducer = (state = initialState, action) => {
   switch (action.type) {
     case MESSAGE_ACTIONS.GET_MESSAGES_SUCCESS:
@@ -48,10 +48,6 @@ export const messageReducer = (state = initialState, action) => {
           return message;
         })],
       };
-    
-      // MESSAGE_ACTIONS.SEEN_MESSAGE_SUCCESS
-    
-
 
     default:
       return state;

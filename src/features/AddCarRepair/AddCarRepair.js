@@ -5,9 +5,9 @@ import { useHistory, useParams } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import { faEnvelope, faBuilding } from '@fortawesome/free-regular-svg-icons';
 import { APP_PAGE_URLS, BUTTON_TYPES } from '../../utils/constants';
-import RbInput from '../../components/Input/Input';
-import RbPage from '../../components/Page/Page';
-import RbButton from '../../components/Button/Button';
+import AfInput from '../../components/Input/Input';
+import AfPage from '../../components/Page/Page';
+import AfButton from '../../components/Button/Button';
 import carActions from '../../redux/actions/carActions';
 import '../../features/Services/style.scss';
 
@@ -60,7 +60,7 @@ const AddCarRepair = () => {
   };
 
   return (
-    <RbPage
+    <AfPage
       title={translate('CAR_SUMMARY.addCarRepair')}
       icon={faBuilding}
       buttonClick={() => {}}
@@ -71,7 +71,7 @@ const AddCarRepair = () => {
 
             <div className="service-inputs">
 
-              <RbInput
+              <AfInput
                 label={translate('CAR_SUMMARY.addRepair.name')}
                 errorMessage={errors.name && errors.name.message}
                 labelIcon={faEnvelope}
@@ -79,14 +79,14 @@ const AddCarRepair = () => {
                 {...register('name', nameValidationRules)}
               />
 
-              <RbInput
+              <AfInput
                 label={translate('CAR_SUMMARY.addRepair.description')}
                 errorMessage={errors.description && errors.description.message}
                 labelIcon={faEnvelope}
                 {...register('description', descripitonValidationRules)}
               />
 
-              <RbInput
+              <AfInput
                 label={translate('CAR_SUMMARY.addRepair.price')}
                 errorMessage={errors.price && errors.price.message}
                 labelIcon={faEnvelope}
@@ -94,7 +94,7 @@ const AddCarRepair = () => {
                 {...register('price', priceValidationRules)}
               />
 
-              <RbInput
+              <AfInput
                 label={translate('CAR_SUMMARY.addRepair.duration')}
                 errorMessage={errors.duration && errors.duration.message}
                 labelIcon={faEnvelope}
@@ -105,12 +105,12 @@ const AddCarRepair = () => {
             </div>
           </div>
           <div className="buttons">
-            <RbButton text={translate('COMMANDS.save')} type="submit" buttonType={BUTTON_TYPES.primary} />
-            <RbButton text={translate('COMMANDS.cancel')} buttonType={BUTTON_TYPES.secondary} onClick={() => history.goBack()} />
+            <AfButton text={translate('COMMANDS.save')} type="submit" buttonType={BUTTON_TYPES.primary} />
+            <AfButton text={translate('COMMANDS.cancel')} buttonType={BUTTON_TYPES.secondary} onClick={() => history.goBack()} />
           </div>
         </div>
       </form>
-    </RbPage>
+    </AfPage>
   );
 };
 

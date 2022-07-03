@@ -49,18 +49,6 @@ const Chat = () => {
     
     let partener = users.find((user) => user.id === receiverUserId);
     let serviceClients = []
-
-    // if(currentUser.role.toString() === USER_TYPE.staff.toString()){
-    //   const serviceId = services.find((service) => service.id === currentUser.serviceId)?.id;
-    //   const serviceCars = cars.filter((car) => car.serviceId === serviceId);
-    //   const clients = serviceCars.map((car) => users.find((user) => user.id === car.userId));
-    //   // filter - clients are only once in array
-    //   serviceClients = clients.filter((elem, index) => index === clients.findIndex((client) => client.id === elem.id)); 
-    //   console.log(serviceId, cars, serviceCars, clients, serviceClients);
-    //   setChatParteners(serviceClients);
-    // }
-
-    
     console.log(receiverUserId, partener);
     if(partener !== undefined)
       setChatPartener(composeName(partener?.firstName, partener?.lastName));
@@ -194,29 +182,6 @@ useEffect(() => {
         
       </form>
       <div className="selector">
-        {/* Chat
-        <select
-          disabled={readOnly}
-          name="properties"
-          onChange={(e) => {
-            console.log("onchange activated", services.find((service) => service.id.toString() === e.target.value).id);
-            dispatch(ServiceActions.setSelectedService(
-              services.find((service) => service.id.toString() === e.target.value),
-            ));
-          }}
-          value={selectedService ? selectedService.id : defaultService}
-        >
-          <option value="" disabled> </option>
-          {chatParteners.map((user) => (
-            (user.id)
-              ? (
-                <option key={user.id} value={user.id}>
-                  {composeLocation(user.firstName,
-                    user.lastName)}
-                </option>
-              ) : ''
-          ))}
-        </select> */}
       </div>
   
   </AfPage>

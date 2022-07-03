@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useHistory, useParams } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import { BUTTON_TYPES, STATUSSES, USER_TYPE } from '../../utils/constants';
 import { useDispatch, useSelector } from 'react-redux';
 import { useTranslation } from 'react-i18next';
@@ -130,13 +129,6 @@ const ExtendedSummary = ({summary}) => {
                       <td>
                         {currentUser.role !== USER_TYPE.client.toString() 
                         ? (<div className="action-buttons">
-                          {/* <AfButton
-                            text={translate('BUTTONS.edit')}
-                            onClick={() => {
-                            }}
-                            buttonType={BUTTON_TYPES.primary}
-                            small
-                          /> */}
                           <AfButton 
                             text={translate('BUTTONS.delete')} 
                             onClick={() => handleOpenDeleteModal(repair?.id)} 
@@ -150,7 +142,6 @@ const ExtendedSummary = ({summary}) => {
                     </tr>
                   );
               })}
-              {/* {filteredLocationsCount === 0 ? <div className="filter-not-found">{translate('LOCATIONS.emptyLocations')}</div> : ''} */}
             </tbody>
           </table>
           :
