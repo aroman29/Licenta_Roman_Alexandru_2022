@@ -1,0 +1,79 @@
+
+.dropdown-component {
+  background-color: white;
+  box-sizing: border-box;
+  padding: 0.675rem 0;
+
+
+  .dropdown-header {
+    color: #5856b3;
+    display: flex;
+    font-size: 18px;
+    font-weight: 400;
+    justify-content: space-between;
+    margin-bottom: 21px;
+    width: 100%;
+  }
+
+  .small-header {
+    font-size: 15px;
+  }
+
+  .icon {
+    color: #5856b3;
+    padding-right: 1rem;
+  }
+
+  .error-msg {
+    color: #c16161;
+    font-size: 16px;
+  }
+
+  .dropdown-text {
+    background-color: #edf2f7;
+    border-color: #5856b3;
+    border-style: solid;
+    border-width: 1px;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: 400;
+    height: 48px;
+    padding-left: 1.3rem;
+    padding-right: 0.5rem;
+    width: 100%;
+  }
+
+  @mixin small {
+    border-radius: 5px;
+    color: #5856b3;
+    height: 30px;
+    width: 140px;
+  }
+
+      .small {
+      width: 180px;
+      height: 30px;
+      background-color: white;
+      border-radius: 5px;
+    }
+
+  .readonly-element {
+    opacity: 0.6;
+    pointer-events: none;
+  }
+
+  .long {
+    @include small;
+    width: 180px;
+  }
+
+  .secondary {
+    background-color: white;
+  }
+
+  select:focus {
+    border: 1px solid #5856b3;
+    box-shadow: 0 0 5px #5856b3;
+    outline: none;
+  }
+}

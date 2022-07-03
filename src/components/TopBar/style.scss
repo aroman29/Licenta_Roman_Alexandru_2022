@@ -1,0 +1,50 @@
+.header{
+  display:flex;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  background-color: rgb(88, 86, 179);
+  color: white;
+  grid-area: appbar;
+}
+
+.logo{
+  display: flex;
+  border-radius: 41px;
+  font-weight: 600;
+  background-color: white;
+  color: black;
+  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 50px;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  .p {
+    margin: none;
+    padding: none;
+  }
+
+  span {
+    color: #5856b3
+  }
+
+}
+
+.navigation-list{
+  display: flex;
+}
+
+li{
+  margin-bottom: 20px;
+  list-style: none;
+}
+
+li a{
+  text-decoration: none;
+  color: white;
+}

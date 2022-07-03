@@ -1,0 +1,37 @@
+.page-wallpaper {
+  width: 600px;
+  height: 300px;
+  margin-right: 50px;
+}
+
+
+.info-container {
+
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+  height: 300px;
+
+  .info-header {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    line-height: 1.6;
+  }
+
+  .info-header-title {
+    font-weight: 600;
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+  
+  .info-header-text {
+    font-weight: normal;
+    font-size: 15px;
+  }
+
+}
+
+table {
+  margin-bottom: 100px;
+}

@@ -1,0 +1,125 @@
+.summary {
+
+  border-radius: 8px;
+  margin-bottom: 32px;
+  color: #5856b3;
+  font-weight: 400;
+
+  .car-summary-container {
+    padding-left: 52px;
+    border-radius: 5px;
+
+    .summary-title {
+      margin-bottom: 10px;
+      padding-top: 10px;
+      font-weight: 600;
+    }
+    
+  
+    .summary-header {
+      align-content: flex-start;
+      box-sizing: border-box;
+      display: flex;
+      min-height: 85px;
+      min-width: 50px;
+  
+      .header-data {
+        max-width: 400px;
+        min-width: 170px;
+  
+        .data {
+          display: flex;
+          flex-direction: row;
+  
+          div {
+            font-weight: 600;
+            margin-left: 5px;
+          }
+          
+        }
+      }
+  
+      .header-status-buttons {
+        min-width: 300px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+        width: 100%;
+        margin-right: 60px;
+        flex-wrap: nowrap;
+      }
+  
+      @media only screen and (max-width: 1550px) {
+        .header-status-buttons {
+          margin-left: 60px;
+        }
+      }
+  
+      @media only screen and (min-width: 1550px) {
+        .header-status-buttons {
+          margin-left: calc(100%/4 + 10px);
+        }
+      }
+      .header-buttons {
+        display: flex;
+        flex-direction: row;
+  
+        .control-buttons {
+          width: 420px;
+          display: flex;
+          justify-content: space-evenly;
+          margin-right: 65px;
+        }
+        .control-buttons-big {
+          width: 560px;
+          display: flex;
+          justify-content: space-evenly;
+          margin-right: 65px;
+        }
+      }
+  
+      .button.small {
+        padding: 9px 15px;
+        width: 125px;
+      }
+    }
+
+  }
+
+  .car-repairs-wrapper {
+    padding-left: 50px;
+    border-top: 1px solid rgb(151, 151, 151);
+    padding-top: 10px;
+    padding-right: 50px;
+  }
+
+  
+}
+
+.waiting {
+  background-color: #f8f8ff !important;
+}
+.accepted {
+  background-color: #f8f8ff !important;
+}
+.inProgress {
+  background-color: #f9f9e0 !important;
+}
+.finished {
+  background-color: #e9ffdc !important;
+}
+.cancelled {
+  background-color: #ffe9e9 !important;
+}
+
+.evidentiate {
+  font-weight: 600;
+  height: 24px;
+  
+}
+
+.unseen {
+  color: red;
+  font-weight: 700;
+}

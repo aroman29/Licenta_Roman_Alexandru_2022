@@ -1,0 +1,100 @@
+.page-title {
+  margin-bottom: 40px;
+}
+
+.header-title {
+  margin-bottom: 120px;
+}
+
+.sidebar{
+  overflow: auto;
+  display:flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  height: 100%;
+  background-color: #edf2f7;
+  padding: 2.8125rem 2.5rem;
+  padding-left: 2.1rem;
+  padding-top: 4rem;
+  height: 100%;
+  width: 360px;
+  color: black;
+  overflow: auto;
+  grid-area: sidebar;
+
+  h1 {
+    margin-bottom: 12px;
+  }
+
+  .user-name {
+    align-content: flex-start;
+    align-items: center;
+    display: flex;
+    margin-bottom: 3.3rem;
+    color: #5856b3;
+
+    .icon {
+      height: 30px;
+      margin-right: 10px;
+    }
+
+    p {
+      font-size: 2.1rem;
+      font-weight: 700;
+      margin: 0;
+    }
+  }
+
+  .link-wrapper {
+    align-items: flex-start;
+    display: flex;
+    height: 1.415rem;
+    padding-bottom: 1.1rem;
+    padding-left: 0.4rem;
+    padding-top: 0.4rem;
+    position: relative;
+
+    .notifications {
+      background-color: orangered;
+      border-radius: 15px;
+      color: white;
+      font-size: 11px;
+      font-weight: 500;
+      height: 15px;
+      left: 0;
+      padding-top: 2px;
+      position: absolute;
+      text-align: center;
+      top: 0;
+      width: 17px;
+    }
+
+    .active-link {
+      font-size: 1.225rem;
+      font-weight: 700;
+    }
+
+    a {
+      color: #5856b3;
+      display: inline-block;
+      font-size: 1.125rem;
+      text-decoration: none;
+    }
+
+    a:hover {
+      font-size: 1.225rem;
+      font-weight: 700;
+    }
+
+    a:visited {
+      color: #5856b3;
+    }
+
+    .icon {
+      color: #5856b3;
+      padding-right: 1rem;
+      width: 1.6875rem;
+    }
+  }
+
+}

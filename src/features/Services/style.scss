@@ -1,0 +1,119 @@
+$font-size-table-content: 16px;
+$font-size-address-column: 18px;
+
+$padding-right: 3em;
+$border-min-size: 1px;
+
+$td-height: 75px;
+$td-border-size: 20px;
+$td-padding-left: 10px;
+$full-size: 100%;
+
+$rental-status-no-color: #c16161;
+$rental-status-yes-color: #3d884d;
+$rental-status-pending-color: #e5b945;
+
+.table-header {
+  background-color: #fff
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+
+  .dropdown-text {
+    background-color: white;
+  }
+
+  .search {
+    margin-top: 38px;
+  }
+}
+
+.header {
+  border-bottom: 1px solid #edf2f7;
+}
+
+table {
+  td {
+    border-top: 20px solid white;
+  }
+}
+
+th {
+  color: #5856b3;
+  font-size: 15px;
+  padding-left: 10px;
+  text-align: left;
+}
+
+table {
+  td {
+    background-color: #f7fafc;
+    color: #5856b3;
+    font-size: 16px;
+    height: 75px;
+    padding-left: 10px;
+    padding-right: 3em;
+  }
+}
+
+td:first-child {
+  font-size: 18px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.status-0 {
+  color: #c16161;
+  text-transform: uppercase;
+}
+
+.status-1 {
+  color: #3d884d;
+  text-transform: uppercase;
+}
+
+.status-2 {
+  color: #e5b945;
+  text-transform: uppercase;
+}
+
+.action-buttons {
+  display: flex;
+
+  .button {
+    margin-right: 20px;
+    min-width: 100px;
+  }
+}
+
+.add-service {
+  border-bottom: solid #cddbc8 1px;
+  margin-left: 0.95rem;
+  margin-top: 0.15rem;
+  padding-bottom: 2.6rem;
+
+  .service-inputs {
+    width: 400px;
+  }
+}
+
+.filter-not-found {
+  margin-left: 13px;
+  margin-top: 23px;
+}
+
+.buttons {
+  display: inline-block;
+  margin-left: 15px;
+  margin-top: 1.25rem;
+
+  .button {
+    margin-right: 27px;
+  }
+}

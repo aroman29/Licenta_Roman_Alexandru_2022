@@ -1,0 +1,47 @@
+
+.collapsable-wrapper {
+
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  min-height: 50px;
+
+  .static-box {
+
+    display: flex;
+    width: 400px;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: solid #cddbc8 1px;
+
+    .title-button {
+      display: flex;
+      flex-direction: row;
+      span {
+        font-size: 16px;
+        font-weight: 600;
+        padding-left: 5px;
+      }
+    }
+  }
+
+  .collapsable-container {
+    padding: 10px;
+    padding-top: 30px;
+  }
+
+  .collapsed {
+    // animation: css 0s 0.75s forwards;
+    display: none;
+  }
+
+  .visual {
+    height: auto;
+    visibility: visual; 
+  }
+
+  @keyframes css {
+     to { height: 0; visibility: hidden; } 
+  }
+
+}

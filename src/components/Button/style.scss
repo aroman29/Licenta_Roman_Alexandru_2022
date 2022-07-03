@@ -1,0 +1,61 @@
+
+.button {
+  border-radius: 5px;
+
+  cursor: pointer;
+
+  font-size: 15px;
+  font-style: normal;
+  font-weight: bold;
+
+  line-height: 20px;
+  padding: 14px 25px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+  
+  &.green {
+    color:#3d884d;
+    border: 2px solid #3d884d;
+    background-color: white;
+  }
+
+  &.primary {
+    background-color: #5856b3;
+    border: 2px solid #5856b3;
+    color: white;
+  }
+
+  &.secondary {
+    background-color: white;
+    border: 2px solid #5856b3;
+    color: #5856b3;
+  }
+
+  &.delete {
+    background-color: #c16161;
+    border: 2px solid #c16161;
+    color: white;
+  }
+
+  &.add {
+    background-color: #3d884d;
+    border: 2px solid #3d884d;
+    color: white;
+  }
+
+  .button-icon {
+    margin-right: 10px;
+  }
+
+  &.small {
+    padding: 9px 15px;
+  }
+  
+  &.disabled {
+    cursor: auto;
+    opacity: 0.6;
+  }
+}
+

@@ -1,0 +1,182 @@
+{
+  "GENERAL": {
+    "appName": "AutoFocus",
+    "logo":"Auto",
+    "logo-colored":"Focus",
+    "copyright": "AutoFocus 2022",
+    "versionLabel":"v{{version}}"
+
+  },
+  "MODAL": {
+    "deleteTitle": "Delete",
+    "confirm": "Confirm",
+    "EditCarJob": "Edit car Repair",
+    "DeleteCarJob": "Delete car Repair",
+    "cancel": "Cancel",
+    "areYouSureMessage": "Are you sure?",
+    "confirmMessage": "Are you sure you want to delete?",
+    "acceptCarMesage": "You will accept appointment in service",
+    "startCarMesage": "You will start the car reparations",
+    "finishCarMesage": "You will finish the reparations",
+    "cancelCarMesage": "You will cancel appointment in service",
+    "pickedCarMessage": "You will confirm that the client has picked up the car"
+
+  },
+  "COMMANDS":{
+    "save" : "Save",
+    "cancel": "Cancel"
+  },
+  "BUTTONS": {
+    "edit": "Edit",
+    "delete": "Delete",
+    "add": "Add",
+    "viewService": "View Service",
+    "custom": "Custom",
+    "addStaff": "Add staff",
+    "deleteStaff": "Delete staff"
+  },
+  "LOGIN": {
+    "username": "Username",
+    "password": "Password",
+    "registerLink": "Dont have an account?",
+    "userPlaceholder": "Username",
+    "userError": "Username is required",
+    "passError": "Password is required",
+    "loginError":"Could not sign in."
+  },
+  "SIDEBAR": {
+    "dashboardLink": "Dashboard",
+    "servicesLink": "Services",
+    "carsLink": "Cars",
+    "logoutLink": "Logout",
+    "authenticateLink": "Authenticate",
+
+    "clientHomeLink": "Home",
+    "selectServiceLink": "View Services"
+  },
+  "DASHBOARD": {
+    "content": "content......",
+    "welcome": "Welcome",
+    "reservationDayLimitRequired": "Daily reservation limit required",
+    "reservationDayLimitLabel": "Reservation Limit",
+    "customReservationInfo": "You can customise reservation limit by only changing the limit for one day or one week",
+    "dayIsFullForReservation": "Day is full, please chose another"
+  },
+  "SERVICES": {
+    "title": "Service locations",
+    "buttonText": "Add service",
+    "editService": "Edit service",
+    "content": "services.......",
+    "city": "City",
+    "address": "Address",
+    "lat": "Latitude",
+    "lng": "longitude",
+    "reservationLimit": "Reservation Limit",
+    "addressError": "Address is required",
+    "cityError": "City is required",
+    "latError": "Latitude is requred",
+    "lngError": "Longitude is required",
+    "reservationLimitError": "Reservation limit is required",
+    "managedService": "Managed Service",
+    "tableHeaders": {
+      "index": "#",
+      "address": "Address",
+      "city": "City",
+      "open": "Open",
+      "actions": "Actions"
+      
+    }
+  },
+  "SERVICES_PAGE": {
+    "info": {
+      "title": "Whatever suits you best.",
+      "text": "Would you like to arrange a Service Appointment with us? AutoFocus makes it easy for you to get the appointment you want – wherever you are and whatever time of day it is. All you need to do is select the service that is closest to you, type your car model and problems, and hit appoint!"
+    }
+  },
+  "CARS": {
+    "title": "Cars in service",
+    "content": "cars......."
+  },
+  "CAR_SUMMARY": {
+    "addCarRepair": "Add Car Reparation",
+    "combustible": {
+      "0": "Gas",
+      "1": "Diesel"
+    },
+    "status": {
+      "0": "WAITING",
+      "1": "IN_SERVICE",
+      "2": "IN PROGRESS",
+      "3": "FINISHED",
+      "4": "CANCELLED"
+    },
+    "addRepair": {
+      "name": "Name",
+      "description": "Description",
+      "price": "Price",
+      "duration": "Duration"
+    }
+  },
+
+  "REGISTER": {
+    "username": "Username",
+    "userRole": "User Role",
+    "firstName": "First Name",
+    "password": "Password",
+    "lastName": "Last Name",
+    "confirmPass": "Confirm Password",
+    "phone": "Phone Number",
+    "admin": "Admin",
+    "client": "Client",
+    "cancel": "Cancel",
+    "register": "Register",
+    "idCard": "Id Card",
+    "userError": "Username is required.",
+    "passError": "Password is required.",
+    "userRoleError": "User Role is required.",
+    "confirmPassError": "Confirm Password is required.",
+    "passMatchError": "The passwords do not match.",
+    "firstNameError": "First Name is required.",
+    "lastNameError": "Last Name is required.",
+    "phoneLengthError": "Phone Number cant be longet than 12 characters.",
+    "phoneNumberRequired": "Phone Number is required.",
+    "idCardRequired": "Id Card is required.",
+    "idCardLength": "Id Card cant be longer than 12 chanacters.",
+    "onlyDigitsError": "Only digits are allowed.",
+    "idCardFormatError": "Id card syntax is bad",
+    "emailError": "Email already exists.",
+    "updateAccount": "Update",
+    "completeAccount": "You need to complete your account before the first use of the app."
+  },
+  "APPOINTMENT": {
+    "buttonTitleText": "Make an Appointment"
+  },
+  "CAR": {
+    "mark": "Mark",
+    "model": "Model",
+    "generation": "Generation",
+    "fabricationDate": "Fabrication Date",
+    "combustible": "Combustible",
+
+    "makeAppointment": {
+      "reservationDate": "Reservation Date",
+      "reservationHour": "Reservation hour",
+      "markRequired": "Mark is Required",
+      "modelRequired": "Model is Required",
+      "generationRequired": "Generation is Required",
+      "fabricationDateRequired": "Fabrication Date is Required",
+      "combustibleRequired": "Combustible is Required",
+      "dateRequired": "Reservation date is Required",
+      "hourRequired": "Reservation hour is Required"
+    }
+    
+  },
+  "MESSAGES":{
+    "title": "Messages",
+    "sendMessage": "Send Message",
+    "messagePlaceholder": "Type in your message",
+    "seen": "seen",
+    "emptyMessage": "Start chatting with <0>{{user}}</0> by sending your first message."
+  }
+}
+

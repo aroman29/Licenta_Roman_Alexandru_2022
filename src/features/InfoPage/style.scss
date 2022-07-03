@@ -1,0 +1,42 @@
+.subtitle {
+  font-size: 22px;
+
+}
+
+.title-line {
+  margin: 30px 60px 30px 0px;
+  display:flex;
+  height : 0;
+  border: 1px solid #5856b3;
+
+}
+
+.page-content{
+
+  .info-card {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    border-radius: 20px;
+    background-color: aliceblue;
+    background-color: #edf2f7;
+    height: auto;
+    margin: 20px;
+    padding: 15px;
+    padding-left: 35px;
+    line-height: 1.5;
+
+    .card-icon {
+      margin: auto;
+      margin-right: 30px;
+      margin-left: 5px;
+    }
+
+    .card-content {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+}
+

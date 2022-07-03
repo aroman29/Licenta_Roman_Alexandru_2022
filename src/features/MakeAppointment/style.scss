@@ -1,0 +1,67 @@
+.make-appointment-wrapper {
+  border-bottom: solid #cddbc8 1px;
+  margin-left: 0.95rem;
+  margin-top: 0.15rem;
+  padding-bottom: 2.6rem;
+
+  .form-inputs {
+    width: 800px;
+
+    .card-aligned {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .dropdown-header.small-header {
+      font-size: 18px !important;
+    }
+
+  }
+}
+
+.picker {
+  margin: 20px 0 !important;
+  
+}
+
+
+.buttons {
+  display: inline-block;
+  margin-left: 15px;
+  margin-top: 1.25rem;
+
+  .button {
+    margin-right: 27px;
+  }
+}
+
+.notes-section {
+  margin-top: 20px;
+  .notes-title {
+    margin-bottom: 10px;
+  }
+}
+
+.date-picker-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .input-error-msg {
+    color: #c16161 !important;
+    font-size: 16px;
+    margin-top: 55px;
+  }
+}
+
+.date-picker-container {
+  .css-epd502 {
+    margin: 30px 0 !important;
+  
+    .Mui-selected {
+      background-color: #3e3d74  !important;
+      color: white !important;
+    }
+  
+  }
+}

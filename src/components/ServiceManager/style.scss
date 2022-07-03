@@ -1,0 +1,23 @@
+.topbar-component {
+  background-color: #5856b3;
+  color: white;
+  display: block;
+  font-size: 15px;
+  height: auto;
+  width: 19rem;
+  padding: 0 !important;
+
+  select {
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    color: #5856b3;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    height: 2rem;
+    margin-top: 0.4rem;
+    padding-left: 0.5rem;
+    padding-right: 2rem;
+    width: 19rem;
+  }
+}
